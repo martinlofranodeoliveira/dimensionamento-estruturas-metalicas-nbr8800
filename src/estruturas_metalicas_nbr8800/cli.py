@@ -262,7 +262,7 @@ def comando_gerar_exemplo(args: argparse.Namespace) -> int:
             "aco": "A572_GR50",
             "contorno": {
                 "kx_lx_cm": "500",
-                "ky_ly_cm": "500",
+                "ky_ly_cm": "150",
                 "lb_cm": "150",
                 "cb_fator": "1",
             },

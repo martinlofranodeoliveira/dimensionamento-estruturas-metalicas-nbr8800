@@ -166,13 +166,15 @@ def verificar_tracao_axial(
 
     ratio = nsd_kn / nt_rd if nt_rd > 0 else Fraction(0, 1)
     atende_resistencia = nsd_kn <= nt_rd
-    atende_esbeltez = esbeltez <= ESBELTEZ_MAXIMA_TRACAO
+    atende_esbeltez = (esbeltez <= ESBELTEZ_MAXIMA_TRACAO) or (nsd_kn == 0)
     atende = atende_resistencia and atende_esbeltez
 
     if not atende_resistencia:
         modo = "REPROVADO: Força solicitante de tração N_sd excede a capacidade resistente N_t,Rd."
     elif not atende_esbeltez:
         modo = f"REPROVADO: Esbeltez de tração ({float(esbeltez):.1f}) excede o limite normativo 300."
+    elif nsd_kn == 0:
+        modo = "CONFORME: Elemento sem esforço solicitante de tração (N_sd = 0)."
     else:
         modo = "CONFORME: Escoamento e ruptura atendidos com esbeltez controlada."
 
@@ -234,13 +236,15 @@ def verificar_compressao_axial(
 
     ratio = nsd_kn / nc_rd if nc_rd > 0 else Fraction(0, 1)
     atende_resistencia = nsd_kn <= nc_rd
-    atende_esbeltez = lambda_max <= ESBELTEZ_MAXIMA_COMPRESSAO
+    atende_esbeltez = (lambda_max <= ESBELTEZ_MAXIMA_COMPRESSAO) or (nsd_kn == 0)
     atende = atende_resistencia and atende_esbeltez
 
     if not atende_resistencia:
         modo = f"REPROVADO: Força solicitante N_sd ({float(nsd_kn):.1f} kN) > N_c,Rd ({float(nc_rd):.1f} kN)."
     elif not atende_esbeltez:
         modo = f"REPROVADO: Esbeltez de compressão ({float(lambda_max):.1f}) excede o limite normativo 200."
+    elif nsd_kn == 0:
+        modo = "CONFORME: Elemento sem esforço solicitante de compressão (N_sd = 0)."
     else:
         modo = "CONFORME: Resistência à compressão e estabilidade elástica atendidas."
 
