@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" />
+      <stop offset="100%" stop-color="#374151" />
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.6" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Fundo Principal -->
+  <rect width="1440" height="900" fill="url(#bgGrad)" />
+
+  <!-- Cabeçalho Técnico -->
+  <rect x="30" y="25" width="1380" height="95" rx="12" fill="url(#cardGrad)" filter="url(#dropShadow)" />
+  <text x="55" y="65" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">LOFRANO TECNOLOGIA</text>
+  <text x="55" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94a3b8">DIMENSIONAMENTO DE ESTRUTURAS METÁLICAS E PERFIS DE AÇO · ABNT NBR 8800:2024</text>
+
+  <!-- Selo de Conformidade Geral -->
+  <rect x="1080" y="42" width="300" height="60" rx="8" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="2" />
+  <circle cx="1115" cy="72" r="12" fill="#10b981" />
+  <text x="1140" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#10b981">CONFORME NBR 8800:2024</text>
+
+  <!-- Painel 1: Seção Transversal e Geometria do Perfil -->
+  <rect x="30" y="140" width="580" height="440" rx="12" fill="url(#cardGrad)" filter="url(#dropShadow)" />
+  <text x="55" y="175" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#38bdf8">1. Seção Transversal do Perfil I</text>
+  <text x="55" y="200" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Perfil W250x38.5 · Aço A572_GR50 · Ag = 49.7 cm²</text>
+
+  <!-- Mesa Superior -->
+  <rect x="235.83969465648855" y="210.0" width="168.3206106870229" height="12.824427480916032" rx="2" fill="url(#steelGrad)" stroke="#60a5fa" stroke-width="2" />
+  <!-- Alma -->
+  <rect x="316.22137404580155" y="222.82442748091603" width="7.557251908396947" height="274.35114503816794" fill="url(#steelGrad)" stroke="#60a5fa" stroke-width="2" />
+  <!-- Mesa Inferior -->
+  <rect x="235.83969465648855" y="497.17557251908397" width="168.3206106870229" height="12.824427480916032" rx="2" fill="url(#steelGrad)" stroke="#60a5fa" stroke-width="2" />
+
+  <!-- Eixos Principais Centrais -->
+  <line x1="150.0" y1="360.0" x2="490.0" y2="360.0" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="6,4" />
+  <text x="495.0" y="364.0" font-family="monospace" font-size="12" fill="#ef4444">Eixo X (Forte)</text>
+  <line x1="320.0" y1="190.0" x2="320.0" y2="530.0" stroke="#10b981" stroke-width="1.5" stroke-dasharray="6,4" />
+  <text x="320.0" y="185.0" font-family="monospace" font-size="12" fill="#10b981" text-anchor="middle">Eixo Y (Fraco)</text>
+
+  <!-- Cotas Geométricas -->
+  <text x="320.0" y="198.0" font-family="monospace" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="middle">bf = 14.7 cm (tf = 1.12 cm)</text>
+  <text x="215.83969465648855" y="360.0" font-family="monospace" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="middle" transform="rotate(-90, 215.83969465648855, 360.0)">d = 26.2 cm (tw = 0.66 cm)</text>
+
+  <!-- Painel 2: Capacidades Resistentes no ELU -->
+  <rect x="630" y="140" width="370" height="440" rx="12" fill="url(#cardGrad)" filter="url(#dropShadow)" />
+  <text x="655" y="175" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#38bdf8">2. Resistências de Cálculo (ELU)</text>
+  <text x="655" y="200" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">γ_a1 = 1.10 · γ_a2 = 1.35</text>
+
+  <g transform="translate(655, 230)">
+    <text y="0" font-family="sans-serif" font-size="13" fill="#94a3b8">Compressão Axial N_c,Rd:</text>
+    <text x="320" y="0" font-family="monospace" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="end">740.0 kN</text>
+
+    <text y="35" font-family="sans-serif" font-size="13" fill="#94a3b8">Força Euler Ne (Mínima):</text>
+    <text x="320" y="35" font-family="monospace" font-size="14" font-weight="700" fill="#38bdf8" text-anchor="end">947.5 kN</text>
+
+    <text y="70" font-family="sans-serif" font-size="13" fill="#94a3b8">Redução por Flambagem χ:</text>
+    <text x="320" y="70" font-family="monospace" font-size="14" font-weight="700" fill="#f59e0b" text-anchor="end">0.4997 (Q=0.95)</text>
+
+    <text y="105" font-family="sans-serif" font-size="13" fill="#94a3b8">Momento Plástico Mpl,x:</text>
+    <text x="320" y="105" font-family="monospace" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="end">170.1 kN.m</text>
+
+    <text y="140" font-family="sans-serif" font-size="13" fill="#94a3b8">Momento Resistente M_Rd,x:</text>
+    <text x="320" y="140" font-family="monospace" font-size="14" font-weight="700" fill="#10b981" text-anchor="end">154.6 kN.m</text>
+
+    <text y="175" font-family="sans-serif" font-size="13" fill="#94a3b8">Momento Resistente M_Rd,y:</text>
+    <text x="320" y="175" font-family="monospace" font-size="14" font-weight="700" fill="#10b981" text-anchor="end">37.6 kN.m</text>
+
+    <text y="210" font-family="sans-serif" font-size="13" fill="#94a3b8">Cortante Resistente V_Rd,y:</text>
+    <text x="320" y="210" font-family="monospace" font-size="14" font-weight="700" fill="#38bdf8" text-anchor="end">325.4 kN</text>
+
+    <text y="245" font-family="sans-serif" font-size="13" fill="#94a3b8">Comprimento Limite Lp (FLT):</text>
+    <text x="320" y="245" font-family="monospace" font-size="14" font-weight="700" fill="#e2e8f0" text-anchor="end">145.8 cm</text>
+
+    <text y="280" font-family="sans-serif" font-size="13" fill="#94a3b8">Comprimento Limite Lr (FLT):</text>
+    <text x="320" y="280" font-family="monospace" font-size="14" font-weight="700" fill="#e2e8f0" text-anchor="end">656.0 cm</text>
+  </g>
+
+  <!-- Painel 3: Estabilidade e Interação Flexo-Compressão -->
+  <rect x="1020" y="140" width="390" height="440" rx="12" fill="url(#cardGrad)" filter="url(#dropShadow)" />
+  <text x="1045" y="175" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#38bdf8">3. Estabilidade e Interação</text>
+  <text x="1045" y="200" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Esbeltez Limite: λ &lt;= 200</text>
+
+  <!-- Card Esbeltez X e Y -->
+  <rect x="1045" y="225" width="340" height="85" rx="8" fill="#0f172a" fill-opacity="0.6" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="1060" y="250" font-family="sans-serif" font-size="13" font-weight="700" fill="#38bdf8">Índices de Esbeltez</text>
+  <text x="1060" y="275" font-family="monospace" font-size="13" fill="#f8fafc">λx = 32.6 · λy = 101.7</text>
+  <text x="1060" y="295" font-family="monospace" font-size="12" fill="#10b981">λmax = 101.7 &lt;= 200.0 (CONFORME)</text>
+
+  <!-- Card Interação Flexo-Compressão -->
+  <rect x="1045" y="325" width="340" height="110" rx="8" fill="#0f172a" fill-opacity="0.6" stroke="#10b981" stroke-width="1.5" />
+  <text x="1060" y="350" font-family="sans-serif" font-size="13" font-weight="700" fill="#10b981">Interação Flexo-Compressão (Item 5.5.1)</text>
+  <text x="1060" y="375" font-family="monospace" font-size="11" fill="#94a3b8">N_sd/N_c,Rd + 8/9*(M_sd,x/M_Rd,x + M_sd,y/M_Rd,y) &lt;= 1.00</text>
+  <text x="1060" y="400" font-family="monospace" font-size="14" font-weight="700" fill="#f8fafc">Taxa Combinada: 70.2%</text>
+  <text x="1060" y="420" font-family="sans-serif" font-size="11" font-weight="700" fill="#10b981">CAPACIDADE SUFICIENTE</text>
+
+  <!-- Painel Inferior: Síntese de Auditoria -->
+  <rect x="30" y="600" width="1380" height="270" rx="12" fill="url(#cardGrad)" filter="url(#dropShadow)" />
+  <text x="55" y="635" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#38bdf8">4. Auditoria Estrutural e Resumo Executivo Normativo</text>
+
+  <g transform="translate(55, 660)">
+    <!-- Card 1: Compressão -->
+    <rect width="310" height="185" rx="8" fill="#0f172a" fill-opacity="0.8" stroke="#10b981" stroke-width="1.5" />
+    <text x="20" y="32" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Compressão Axial</text>
+    <text x="20" y="60" font-family="sans-serif" font-size="12" fill="#94a3b8">N_sd: 280.0 kN</text>
+    <text x="20" y="85" font-family="sans-serif" font-size="12" fill="#94a3b8">N_c,Rd: 740.0 kN</text>
+    <text x="20" y="110" font-family="sans-serif" font-size="12" fill="#94a3b8">Trabalho: 37.8%</text>
+    <rect x="20" y="130" width="270" height="35" rx="6" fill="#10b981" fill-opacity="0.2" />
+    <text x="155" y="152" font-family="sans-serif" font-size="12" font-weight="700" fill="#10b981" text-anchor="middle">COMPRESSÃO CONFORME</text>
+
+    <!-- Card 2: Flexão Simples -->
+    <g transform="translate(330, 0)">
+      <rect width="310" height="185" rx="8" fill="#0f172a" fill-opacity="0.8" stroke="#10b981" stroke-width="1.5" />
+      <text x="20" y="32" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Flexão X (FLT)</text>
+      <text x="20" y="60" font-family="sans-serif" font-size="12" fill="#94a3b8">M_sd,x: 42.0 kN.m</text>
+      <text x="20" y="85" font-family="sans-serif" font-size="12" fill="#94a3b8">M_Rd,x: 154.6 kN.m</text>
+      <text x="20" y="110" font-family="sans-serif" font-size="12" fill="#94a3b8">Trabalho: 27.2%</text>
+      <rect x="20" y="130" width="270" height="35" rx="6" fill="#10b981" fill-opacity="0.2" />
+      <text x="155" y="152" font-family="sans-serif" font-size="12" font-weight="700" fill="#10b981" text-anchor="middle">FLEXÃO CONFORME</text>
+    </g>
+
+    <!-- Card 3: Força Cortante -->
+    <g transform="translate(660, 0)">
+      <rect width="310" height="185" rx="8" fill="#0f172a" fill-opacity="0.8" stroke="#10b981" stroke-width="1.5" />
+      <text x="20" y="32" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Cisalhamento Alma</text>
+      <text x="20" y="60" font-family="sans-serif" font-size="12" fill="#94a3b8">V_sd,y: 65.0 kN</text>
+      <text x="20" y="85" font-family="sans-serif" font-size="12" fill="#94a3b8">V_Rd,y: 325.4 kN</text>
+      <text x="20" y="110" font-family="sans-serif" font-size="12" fill="#94a3b8">Trabalho: 20.0%</text>
+      <rect x="20" y="130" width="270" height="35" rx="6" fill="#10b981" fill-opacity="0.2" />
+      <text x="155" y="152" font-family="sans-serif" font-size="12" font-weight="700" fill="#10b981" text-anchor="middle">CORTANTE CONFORME</text>
+    </g>
+
+    <!-- Card 4: Síntese de Dimensionamento -->
+    <g transform="translate(990, 0)">
+      <rect width="330" height="185" rx="8" fill="#0f172a" fill-opacity="0.8" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="20" y="32" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Diagnóstico Geral</text>
+      <text x="20" y="60" font-family="monospace" font-size="12" fill="#38bdf8">Perfil: W250x38.5</text>
+      <text x="20" y="85" font-family="monospace" font-size="12" fill="#f59e0b">Aço: A572_GR50 (fy=345 MPa)</text>
+      <text x="20" y="110" font-family="monospace" font-size="12" fill="#10b981">Esbeltez: λmax=101.7</text>
+      <rect x="20" y="130" width="290" height="35" rx="6" fill="#10b981" fill-opacity="0.2" />
+      <text x="165" y="152" font-family="sans-serif" font-size="12" font-weight="700" fill="#10b981" text-anchor="middle">PRONTO P/ DETALHAMENTO</text>
+    </g>
+  </g>
+</svg>

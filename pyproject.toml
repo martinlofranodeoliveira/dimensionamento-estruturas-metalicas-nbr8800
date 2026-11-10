@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dimensionamento-estruturas-metalicas-nbr8800"
+version = "1.0.0"
+description = "Dimensionamento analítico de perfis de aço estrutural sob tração, compressão, flexão e cisalhamento segundo a ABNT NBR 8800:2024 em frações exatas e Python puro."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Lofrano Tecnologia", email = "contato@lofranotecnologia.com.br" }
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
+    "Natural Language :: Portuguese (Brazilian)",
+]
+keywords = [
+    "engenharia-estrutural",
+    "estruturas-metalicas",
+    "nbr8800",
+    "perfis-i-w",
+    "calculo-estrutural",
+    "flambagem-euler",
+    "fracoes-exatas",
+]
+
+[project.scripts]
+estruturas-metalicas = "estruturas_metalicas_nbr8800.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/martinlofranodeoliveira/dimensionamento-estruturas-metalicas-nbr8800"
+Repository = "https://github.com/martinlofranodeoliveira/dimensionamento-estruturas-metalicas-nbr8800"
+Issues = "https://github.com/martinlofranodeoliveira/dimensionamento-estruturas-metalicas-nbr8800/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+estruturas_metalicas_nbr8800 = ["py.typed"]

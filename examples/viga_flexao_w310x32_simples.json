@@ -1,0 +1,17 @@
+{
+  "perfil": "W310x32.7",
+  "aco": "A572_GR50",
+  "contorno": {
+    "kx_lx_cm": "500",
+    "ky_ly_cm": "500",
+    "lb_cm": "150",
+    "cb_fator": "1"
+  },
+  "solicitacoes": {
+    "nsd_tracao_kn": "0",
+    "nsd_compressao_kn": "0",
+    "msd_x_kn_cm": "6500",
+    "msd_y_kn_cm": "0",
+    "vsd_y_kn": "85"
+  }
+}
